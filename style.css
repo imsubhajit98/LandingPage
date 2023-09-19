@@ -1,0 +1,453 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  :root{
+    --color1:#DDA81B;
+    --color2:#000000;
+    --color3:#DCA827;
+    --color4:#fff;
+    --color5:#cccccc;
+  }
+
+
+  body{
+    width: 100%;
+    height: 100%;
+  }
+
+
+/*----------------------------  Navbar -------------------------------------*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: var(--color4);
+    height: 80px;
+  }
+  
+  .header .sticky {
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    font-size: 2rem;
+    color: white;
+    font-weight: 600;
+    cursor: default;
+  }
+  
+  .navbar a {
+    font-size: 1.2rem;
+    color: var(--color2);
+    margin-left: 2rem;
+    transition: 0.3s;
+    text-transform: uppercase;
+  }
+  
+  .navbar .border{
+    cursor: text;
+  }
+
+.navbar a:hover{
+    color: var(--color1) !important;
+  }
+  
+
+  #menu-icon {
+    font-size: 4.6rem;
+    color: var(--color2);
+    display: none;
+  }
+  
+  .nav-btn {
+    background-color: var(--color3);
+    color: var(--color2) !important;
+    padding: 6px 8px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  
+/* ----------------------------- Banner -------------------------------- */
+.banner{
+    height: 700px;
+    width: 100%;
+    position: relative;
+}
+
+.banner img{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+
+.bannerTxt{
+    position: absolute;
+    left: 10%;
+    top: 30%;
+
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.b2{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid var(--color5);
+    border-bottom: 1px solid var(--color5);
+    padding: 1rem 0;
+}
+.bannerTxt img{
+    width: 60px;
+    height: 60px;
+}
+.b1{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.b1 h5{
+    font-size: 1.5rem;
+    color: var(--color1);
+    font-weight: 100;
+}
+
+.b1 h3{
+    font-size: 2.5rem;
+    color: var(--color4);
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.b2 div{
+    color: var(--color4);
+    border-left: 1px solid var(--color5);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    font-size: 1.2rem;
+}
+.b3{
+    padding: 1rem 0;
+}
+
+
+/* icon Header */
+.iconHeader{
+    width: 100%;
+    background-color:#fae9c0;
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    justify-content: space-evenly;
+    padding: 1rem .5rem ;
+}
+
+.iconHeader .mainIcon{
+    background-color: var(--color4);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainIcon .borderIcon{
+    width: 80px;
+    height: 80px;
+    border: 2px solid var(--color1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: dotted;
+}
+.borderIcon img{
+    width: 50%;
+}
+
+
+/* research section */
+.mainResearch{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: url(./images/Group\ 1707478269.png);
+    background-position: center;
+    /* background-size: contain; */
+    padding: 2rem 3rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #fae9c05f;
+    
+}
+
+.researchTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+.researchTitle h3{
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+.researchTitle h5{
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.mainResearch .researchBody{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.researchBody .researchLeft{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+.researchLeft h3{
+    font-weight: 100;
+}
+.researchLeft h5{
+    font-weight: 100;
+}
+
+.researchLeft img{
+    width: 100%;
+}
+
+.leftImg{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.b4 a{
+    background-color: var(--color2);
+    color: var(--color4) !important;
+    padding-right: 5px;
+}
+.b4 i{
+    background-color: var(--color1);
+    color: var(--color2);
+    padding: 5px;
+}
+.date{
+    position: absolute;
+    /* width: 30px;
+    height: 25px; */
+    background-color: #DCA827;
+    text-align: center;
+    top: 10px;
+    left: 10px;
+}
+.date h3{
+    color: var(--color4);
+    font-weight: 200;
+    font-size: 1rem;
+    padding: 3px;
+}
+
+.researchBody .researchRight{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.rightBox{
+    display: flex;
+    
+    gap: 1rem;
+}
+
+.rightBox1{
+    width: 30%;
+    position: relative;
+
+}
+.date1{
+    position: absolute;
+    /* width: 30px;
+    height: 25px; */
+    background-color: #DCA827;
+    text-align: center;
+    top: 10px;
+    left: 10px;
+}
+.date1 h3{
+    color: var(--color4);
+    font-weight: 200;
+    font-size: .7rem;
+    padding: 1px;
+}
+
+.rightBox1 img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.rightBox2{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.rightBox2 h3{
+    font-weight: 200;
+}
+.rightBox2 h5{
+    font-weight: 200;
+}
+.rightBox2 a{
+    border: 2px solid;
+    padding: 5px 8px;
+}
+
+
+
+/* newsletter */
+.newsLetter{
+    width: 100%;
+    height: 300px;
+    background-image: url(./images/Mask\ group.png);
+    background-size: cover;
+    position: relative;
+}
+
+
+.newletterTxt {
+    left: 5%;
+    top: 50%;
+    position: absolute;
+    
+}
+.newletterTxt h3{
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: var(--color4);
+    margin-bottom: 10px;
+}
+.newletterTxt input[type="text"]{
+    width: 250px;
+    padding: 10px;
+}
+.newletterTxt input[type="submit"]{
+    width: 100px;
+    padding: 10px;
+    background-color: var(--color3);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.newletterTxt input[type="submit"]:hover{
+    background-color: #a78b45;
+    color:var(--color4)
+}
+
+
+/* footer */
+.mainFooter{
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+    background-color: var(--color2);
+    /* align-items: center; */
+    justify-content: center;
+    padding: 4rem 0;
+    
+}
+.mainFooter .footerBox{
+    color: var(--color4);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.payment{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footerBox h3{
+    color: var(--color3);
+    font-weight: 200;
+    font-size: 1.5rem;
+}
+.footerBox a{
+    color: var(--color5);
+    cursor: pointer;
+}
+
+.contact{
+    background-color: var(--color4);
+    border-radius: 50%;
+    padding: 3px 5px;
+    width: 20px;
+    height: 20px;
+}
+.contact i{
+    color: var(--color2);
+}
+
+.footerBox span:last-child a {
+    color: var(--color3);
+    margin-right: 1rem;
+}
+.footerBox span{
+    
+}
+
+/* copyright */
+.copyright{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    background-color: #0e0e0e;
+    border-top: .5px solid grey;
+}
+.copyright h3{
+    color: var(--color4);
+    font-weight: 200;
+    font-size: 1rem;
+}
+.copyright h3 a{
+    color: var(--color4);
+    font-weight: 200;
+}

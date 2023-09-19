@@ -1,0 +1,140 @@
+@media (max-width: 850px) {
+    html {
+      font-size: 50%;
+    }
+    .header {
+      display: flex;
+      flex-direction: column;
+    }
+    .part1 {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .hide {
+      display: none;
+    }
+  
+    #menu-icon {
+      display: block;
+    }
+  
+    .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 1rem 3%;
+      background: #000000c8;
+      border-top: 0.1rem solid rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
+      /* display: none; */
+
+    }
+    .navbar a{
+        color: #fff;
+    }
+
+    .navbar .border{
+        display: none;
+    }
+  
+    .navbar .active {
+      display: block;
+    }
+  
+    .navbar a {
+      display: block;
+      font-size: 2rem;
+      margin: 2rem 0rem;
+      padding: 1rem;
+    }
+    .navlink:hover {
+      background-color: #e7e6e6;
+    }
+
+
+
+    /* banner */
+    .banner{
+        height: 300px;
+    }
+
+    .bannerTxt{
+        left: 5%;
+        top: 32%;
+        width: 35%;
+    }
+    .bannerTxt img{
+        width: 30px;
+        height: 30px;
+    }
+    .b1{
+        gap: .5rem;
+    }
+    .b1 h5{
+        font-size: 1rem;
+    }
+    .b1 h3{
+        font-size: 1.2rem;
+    }
+    .b2 div{
+        height: 30px;
+        font-size: 1rem;
+    }
+
+
+    /* ------------------------- icon haader ------------------------------- */
+    .iconHeader{
+        display: grid;
+        grid-template-columns: repeat(4,60px);
+        justify-content: space-evenly;
+        padding: 1rem 0 ;
+    }
+    .iconHeader .mainIcon{
+        width: 60px;
+        height: 60px;
+    }
+    .mainIcon .borderIcon{
+        width: 40px;
+        height: 40px;
+    }
+
+
+    /* research section */
+    .mainResearch .researchBody{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .researchBody .researchLeft{
+        width: 80%;
+    }
+    .researchBody .researchRight{
+        width: 80%;
+    }
+
+
+    /* newletter */
+    .newsLetter{
+        width: 100%;
+        height: 150px;
+    }
+    .newletterTxt {
+        left: 5%;
+        top: 20%;
+        position: absolute;
+        
+    }
+
+    /* footer */
+    .mainFooter {
+        display: grid;
+        grid-template-columns: repeat(1,80%);
+        gap: 2rem;
+    }
+
+}
